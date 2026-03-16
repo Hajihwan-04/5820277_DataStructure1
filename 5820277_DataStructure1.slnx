@@ -3,5 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="2026.03.10/2026.03.10.vcxproj" />
+  <Project Path="2026.03.12/2026.03.12.vcxproj" />
   <Project Path="5820277_DataStructure1/5820277_DataStructure1.vcxproj" />
 </Solution>
