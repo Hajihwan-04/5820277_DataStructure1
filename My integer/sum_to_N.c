@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #include "my_integer.h"
-
+/*
 main() {
 	my_integer sum = 0;
 	
@@ -11,3 +11,4 @@ main() {
 	}
 	printf("Sum = %d\n", sum);
 }
+*/

@@ -21,6 +21,9 @@
     <ClCompile Include="sum_to_N.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Arguments-based Adder.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="my_integer.h">

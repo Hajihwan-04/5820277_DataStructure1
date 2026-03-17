@@ -128,6 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Arguments-based Adder.c" />
     <ClCompile Include="my integer.c" />
     <ClCompile Include="sum_to_N.c" />
   </ItemGroup>
