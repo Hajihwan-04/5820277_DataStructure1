@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+
 int main() {
 	char sentence[51] = { "\0" };
 
@@ -15,4 +15,3 @@ int main() {
 	printf("%s", sentence);
 	return 0;
 }
-*/
