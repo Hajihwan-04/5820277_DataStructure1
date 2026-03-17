@@ -10,4 +10,5 @@ int main(int c, char** v) {
 	}
 	int a = atoi(v[1]), b = atoi(v[2]);
 	printf("sum : %d", a + b);
+	//ㅁㄴㅇㅁㄴㅇ
 }
