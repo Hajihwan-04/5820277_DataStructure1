@@ -7,7 +7,7 @@ int main() {
 	char op;
 	printf("분수 계산기\n");
 	while (1) {
-		printf("ex)[분수] [연산자] [분수]\n분수는 [분자/분모]");
+		printf("ex)[분수] [연산자] [분수]\n분수는 [분자/분모]\n");
 		if (scanf_s("%d/%d %c %d/%d", &f1.num, &f1.den, &op, 1, &f2.num, &f2.den) != 5) {
 			printf("ERROR 형식 오류\n");
 			while (getchar() != '\n');
