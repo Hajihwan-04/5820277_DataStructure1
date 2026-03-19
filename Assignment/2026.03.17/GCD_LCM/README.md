@@ -22,7 +22,8 @@ ENDFUNCTION
 
 $a \times b = GCD \times LCM$  =>  $LCM = (a \times b) / GCD$
 
-[Pseudo Code]
+**[Pseudo Code]**
+
 ```text
 Plaintext
 FUNCTION Get_LCM(a, b, gcd)
