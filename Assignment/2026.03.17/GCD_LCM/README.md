@@ -25,7 +25,6 @@ $a \times b = GCD \times LCM$  =>  $LCM = (a \times b) / GCD$
 **[Pseudo Code]**
 
 ```text
-Plaintext
 FUNCTION Get_LCM(a, b, gcd)
     LCM = (a * b) / gcd
     RETURN LCM
