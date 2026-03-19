@@ -3,10 +3,6 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Folder Name="/2026.03.17/">
-    <Project Path="Fraction_ADT/Fraction_ADT.vcxproj" Id="77a11026-c786-436f-9406-7de4c70d3d55" />
-    <Project Path="GCD_LCM/GCD_LCM.vcxproj" Id="1a20d501-2003-45db-9086-9b30db7cbea5" />
-  </Folder>
   <Project Path="2026.03.10/2026.03.10.vcxproj" Id="9b00c0d8-837c-4746-aa94-5ac83a69c9fc" />
   <Project Path="2026.03.12/2026.03.12.vcxproj" Id="4dd092ef-3c80-486d-b778-7e55b650c203" />
   <Project Path="5820277_DataStructure1/5820277_DataStructure1.vcxproj" Id="ee55d865-7c5d-4a50-8a53-ec6f853531fd" />
