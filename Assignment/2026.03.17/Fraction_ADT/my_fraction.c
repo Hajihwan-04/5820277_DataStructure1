@@ -24,7 +24,7 @@ Fraction Create(char*  str) {
 		return f1;
 	}
 	else if (str == "0") {
-		f1.num = atoi(str);
+		f1.num = 0;
 		return f1;
 	}
 	else {
