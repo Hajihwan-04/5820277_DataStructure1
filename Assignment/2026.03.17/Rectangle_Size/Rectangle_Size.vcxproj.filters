@@ -23,7 +23,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="my_fractionRe.h">
+    <ClInclude Include="my_fraction_Re.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

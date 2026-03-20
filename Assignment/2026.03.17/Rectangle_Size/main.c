@@ -2,7 +2,7 @@
 #include<string.h>
 #include <stdlib.h>
 
-#include "my_fraction.h"
+#include "my_fraction_Re.h"
 
 int main(int c, char** v) {
 	Fraction f1, f2, muiti2 = {2, 1};

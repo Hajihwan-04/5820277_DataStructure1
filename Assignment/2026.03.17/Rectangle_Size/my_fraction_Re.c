@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "my_fraction.h"
+#include "my_fraction_Re.h"
 
 Fraction Create(char*  str) {
 	Fraction f1 = { f1.num = 0, f1.den = 1 };
