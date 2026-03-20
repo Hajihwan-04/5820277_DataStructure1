@@ -12,8 +12,9 @@ int main() {
 		printf("ex)[실수] [연산자] [실수]\n분수는 [분자/분모]\n입력 >> ");
 		scanf_s("%s %c %s", s1, (unsigned)sizeof(s1), &op, 1, s2, (unsigned)sizeof(s2));
 		f1 = Create(s1);
+		if (f1.den == 0) continue;
 		f2 = Create(s2);
-		if (f1.den == 0 || f2.den == 0) continue;
+		if (f2.den == 0) continue;
 
 		int pass = 0;
 		switch (op) {

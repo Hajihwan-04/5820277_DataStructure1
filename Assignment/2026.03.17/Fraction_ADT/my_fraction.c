@@ -29,8 +29,11 @@ Fraction Create(char*  str) {
 	}
 	else {
 		printf("ERROR 형식 오류\n\n");
+		f1.den = 0;
+		return f1;
 	}
 }
+
 Fraction Add(Fraction f1, Fraction f2) {
 	Fraction result;
 	result.num = (f1.num * f2.den) + (f2.num * f1.den);
