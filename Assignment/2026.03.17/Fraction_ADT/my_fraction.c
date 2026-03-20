@@ -23,13 +23,17 @@ Fraction Create(char* str) {
 		f1 = Simplify(f1.num, f1.den);
 		return f1;
 	}
-	else if (str[0] == '0' || (atoi(str) > 0 && str[1] > 47 && str[1] < 58)) {
-		f1.num = atoi(str);
-		return f1;
-	}
 	else {
-		printf("ERROR 형식 오류\n\n");
-		f1.den = 0;
+		int i = 0;
+		if (str[0] == '-') i++;
+		for (; i < strlen(str); i++) {
+			if (str[i] < 48 || str[i] > 59) {
+				printf("ERROR 형식 오류\n\n");
+				f1.den = 0;
+				return f1;
+			}
+		}
+		f1.num = atoi(str);
 		return f1;
 	}
 }
