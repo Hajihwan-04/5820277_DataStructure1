@@ -46,13 +46,13 @@ Fraction Simplify(int num, int den) {
 		nums = dens;
 		dens = remain;
 	}
-	
 	result.num = num / nums;
 	result.den = den / nums;
 	return result;
 }
 
 Fraction Print(Fraction f1) {
-	printf("%d/%d", f1.num, f1.den);
+	if(f1.den == 1) printf("%d", f1.num);
+	else printf("%d/%d", f1.num, f1.den);
 }
 
