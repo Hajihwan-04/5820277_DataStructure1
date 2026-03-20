@@ -4,7 +4,7 @@
 
 #include "my_fraction.h"
 
-Fraction Create(char* str) {
+Fraction Create(char*  str) {
 	Fraction f1 = { f1.num = 0, f1.den = 1 };
 	if (strchr(str, '/') != NULL) {
 		sscanf_s(str, "%d/%d", &f1.num, &f1.den);
@@ -83,7 +83,7 @@ Fraction Simplify(int num, int den) {
 }
 
 void Print(Fraction f1) {
-	if(f1.den == 1) printf("%d\n", f1.num);
-	else printf("%d/%d\n", f1.num, f1.den);
+	if(f1.den == 1) printf("%d", f1.num);
+	else printf("%d/%d", f1.num, f1.den);
 }
 
