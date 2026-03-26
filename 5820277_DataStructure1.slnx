@@ -10,8 +10,8 @@
     <Project Path="Assignment/2026.03.17/Rectangle_Size/Rectangle_Size.vcxproj" Id="084d9f00-8adf-4e01-9119-9836c5033c63" />
   </Folder>
   <Folder Name="/Assignment/2026.03.26/">
-    <Project Path="example/example.vcxproj" Id="95802a4e-2a24-4b09-a462-d8ee0b46fe0b" />
-    <Project Path="GCD_Profiling/GCD_Profiling.vcxproj" Id="5db697b0-ccfd-4ebf-a8f1-c38ac0c7693f" />
+    <Project Path="Assignment/2026.03.26/example/example.vcxproj" Id="95802a4e-2a24-4b09-a462-d8ee0b46fe0b" />
+    <Project Path="Assignment/2026.03.26/GCD_Profiling/GCD_Profiling.vcxproj" Id="5db697b0-ccfd-4ebf-a8f1-c38ac0c7693f" />
   </Folder>
   <Project Path="2026.03.10/2026.03.10.vcxproj" Id="9b00c0d8-837c-4746-aa94-5ac83a69c9fc" />
   <Project Path="2026.03.12/2026.03.12.vcxproj" Id="4dd092ef-3c80-486d-b778-7e55b650c203" />
