@@ -11,6 +11,7 @@
   </Folder>
   <Folder Name="/Assignment/2026.03.26/">
     <Project Path="Assignment/2026.03.26/example/example.vcxproj" Id="95802a4e-2a24-4b09-a462-d8ee0b46fe0b" />
+    <Project Path="Assignment/2026.03.26/Fibonacci_Profiling/Fibonacci_Profiling/Fibonacci_Profiling.vcxproj" Id="c561ed8f-592e-4207-b339-82168d228189" />
     <Project Path="Assignment/2026.03.26/GCD_Profiling/GCD_Profiling.vcxproj" Id="5db697b0-ccfd-4ebf-a8f1-c38ac0c7693f" />
   </Folder>
   <Project Path="2026.03.10/2026.03.10.vcxproj" Id="9b00c0d8-837c-4746-aa94-5ac83a69c9fc" />
