@@ -1,6 +1,12 @@
 # 2) 피보나치 수열의 시 복잡도 분석 및 프로파일링
 
 ## 1. 알고리즘 구현 코드
+GCD.h: https://github.com/Hajihwan-04/5820277_DataStructure1/blob/master/Assignment/2026.03.26/Fibonacci_Profiling/GCD.h
+
+GCD.c: https://github.com/Hajihwan-04/5820277_DataStructure1/blob/master/Assignment/2026.03.26/Fibonacci_Profiling/GCD.c
+
+main.c: https://github.com/Hajihwan-04/5820277_DataStructure1/blob/master/Assignment/2026.03.26/Fibonacci_Profiling/main.c
+
 피보나치 수열 생성 및 유클리드 호제법을 수행하기 위해 작성된 C 언어 코드는 다음과 같다.
 피보나치 수열 생성을 하는 $Get_Fib$ 함수는 $n$번째인 피보나치 수를 찾는 가능한 많은 연산을 거치는 방식 중 하나이고, 유클리드 호제법을 이용한 $Get_GCD$ 함수를 1,000,000번 반복하는 것은 걸리는 시간이 너무 짧아 시각화 하기 위함이다. 
 
