@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="GCD.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="make_file.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GCD.h" />
