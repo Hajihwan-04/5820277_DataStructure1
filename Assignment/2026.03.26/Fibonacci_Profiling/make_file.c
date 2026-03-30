@@ -1,5 +1,5 @@
 /*
-#include <time.h>
+
 
 int main() {
     unsigned long long f1, f2, GCD;
