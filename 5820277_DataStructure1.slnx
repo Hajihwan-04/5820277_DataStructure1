@@ -14,7 +14,10 @@
     <Project Path="Assignment/2026.03.26/Fibonacci_Profiling/Fibonacci_Profiling.vcxproj" Id="829c123d-0a94-41c2-af75-88f5bcf52f62" />
     <Project Path="Assignment/2026.03.26/GCD_Profiling/GCD_Profiling.vcxproj" Id="5db697b0-ccfd-4ebf-a8f1-c38ac0c7693f" />
   </Folder>
-  <Folder Name="/Assignment/2026.03.31/" />
+  <Folder Name="/Assignment/2026.03.31/">
+    <Project Path="Assignment/2026.03.31/Array_Print/Array_Print.vcxproj" Id="53f9cea2-1e61-4288-b786-fd7c3d390af8" />
+    <Project Path="Assignment/2026.03.31/Array_Professor/Array_Professor.vcxproj" Id="86b562d7-750f-4817-bfab-facf7d8a6b22" />
+  </Folder>
   <Project Path="2026.03.10/2026.03.10.vcxproj" Id="9b00c0d8-837c-4746-aa94-5ac83a69c9fc" />
   <Project Path="2026.03.12/2026.03.12.vcxproj" Id="4dd092ef-3c80-486d-b778-7e55b650c203" />
   <Project Path="5820277_DataStructure1/5820277_DataStructure1.vcxproj" Id="ee55d865-7c5d-4a50-8a53-ec6f853531fd" />
