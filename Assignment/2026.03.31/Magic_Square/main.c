@@ -29,13 +29,9 @@ int main() {
 	for (int i = 0; i < N; i++) {
 		for (int j = 0; j < N; j++) {
 			printf("|%3d ", arr[i][j]);
+			sumArrX[i] += arr[i][j];
+			sumArrY[j] += arr[i][j];
 			
-			for (int x1 = 0; x1 < N; x1++) {
-				if (i == x1) { sumArrX[x1] += arr[i][j]; }
-			}
-			for (int y1 = 0; y1 < N; y1++) {
-				if (j == y1) { sumArrY[y1] += arr[i][j]; }
-			}
 			if (i == j) { sumArrD[0] += arr[i][j]; }
 			if (i + j == N - 1) { sumArrD[1] += arr[i][j]; }
 		}
@@ -45,11 +41,11 @@ int main() {
 	}
 	
 	for (int x2 = 0; x2 < N; x2++) {
-		printf("가로 %2d열 합 : %d\n", x2, sumArrX[x2]);
+		printf("가로 %2d행 합 : %d\n", x2, sumArrX[x2]);
 	}
 	printf("\n");
 	for (int y2 = 0; y2 < N; y2++) {
-		printf("세로 %2d행 합 : %d\n",  y2, sumArrY[y2]);
+		printf("세로 %2d열 합 : %d\n",  y2, sumArrY[y2]);
 	}
 	
 	

@@ -36,42 +36,39 @@ int main() {
 	if (sumArrX == NULL) { printf("No more memory!"); return 1; }
 	int* sumArrY = (int*)calloc(N, sizeof(int));
 	if (sumArrY == NULL) { printf("No more memory!"); return 1; }
-	int sumArrD[2] = { 0 };
+	int sumD1 = 0, sumD2 = 0;
 
 	for (int i = 0; i < N; i++) {
 		for (int j = 0; j < N; j++) {
 			printf("|%3d ", *(*(matrix + i) + j));
 
-			for (int x1 = 0; x1 < N; x1++) {
-				if (i == x1) { *(sumArrX + x1) += *(*(matrix + i) + j); }
-			}
-			for (int y1 = 0; y1 < N; y1++) {
-				if (j == y1) { *(sumArrY + y1) += *(*(matrix + i) + j); }
-			}
-			if (i == j) { sumArrD[0] += *(*(matrix + i) + j); }
-			if (i + j == N - 1) { sumArrD[1] += *(*(matrix + i) + j); }
+			*(sumArrX + i) += *(*(matrix + i) + j);
+			*(sumArrY + j) += *(*(matrix + i) + j);
+			
+			if (i == j) { sumD1 += *(*(matrix + i) + j); }
+			if (i + j == N - 1) { sumD2 += *(*(matrix + i) + j); }
 		}
 		printf("|\n");
 		for (int dash = 0; dash < (N * 5 + 1); dash++) { printf("-"); }
 		printf("\n");
 	}
 	for (int x2 = 0; x2 < N; x2++) {
-		printf("가로 %2d열 합 : %d\n", x2, *(sumArrX + x2));
+		printf("가로 %2d행 합 : %d\n", x2, *(sumArrX + x2));
 	}
 	printf("\n");
 	for (int y2 = 0; y2 < N; y2++) {
-		printf("세로 %2d행 합 : %d\n", y2, *(sumArrY + y2));
+		printf("세로 %2d열 합 : %d\n", y2, *(sumArrY + y2));
 	}
 	
 	printf("\n");
-	printf("0, 0에서 %d, %d방향 대각선 : %d\n", N - 1, N - 1, sumArrD[0]);
-	printf("%d, 0에서 0, %d방향 대각선 : %d\n", N - 1, N - 1, sumArrD[1]);
+	printf("0, 0에서 %d, %d방향 대각선 : %d\n", N - 1, N - 1, sumD1);
+	printf("%d, 0에서 0, %d방향 대각선 : %d\n", N - 1, N - 1, sumD2);
 
 	free(sumArrY);
 	free(sumArrX);
 
 	for (int y3 = 0; y3 < N; y3++) {
-		free(*(matrix + y));
+		free(*(matrix + y3));
 	}
 	free(matrix);
 	return 0;
