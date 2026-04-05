@@ -17,6 +17,7 @@
   <Folder Name="/Assignment/2026.03.31/">
     <Project Path="Assignment/2026.03.31/Array_Print/Array_Print.vcxproj" Id="53f9cea2-1e61-4288-b786-fd7c3d390af8" />
     <Project Path="Assignment/2026.03.31/Array_Professor/Array_Professor.vcxproj" Id="86b562d7-750f-4817-bfab-facf7d8a6b22" />
+    <Project Path="Assignment/2026.03.31/Magic_Square/Magic_Square.vcxproj" Id="cecb83e2-4c62-4f1f-8d57-a90426c858f8" />
   </Folder>
   <Project Path="2026.03.10/2026.03.10.vcxproj" Id="9b00c0d8-837c-4746-aa94-5ac83a69c9fc" />
   <Project Path="2026.03.12/2026.03.12.vcxproj" Id="4dd092ef-3c80-486d-b778-7e55b650c203" />
