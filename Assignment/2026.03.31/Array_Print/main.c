@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #define N 100
 
@@ -16,7 +17,7 @@ int main() {
 	printf("순서대로 출력\n");
 	for (int i = 0; i < N; i++) {
 		printf("%3d: %4d  |", i + 1, arr[i]);
-		if ((i + 1) % 5 == 0 && i != 0) printf("\n");
+		if ((i + 1) % 5 == 0) printf("\n");
 	}
 
 	printf("------------------------------------------------------------\n\n");
@@ -24,7 +25,7 @@ int main() {
 	printf("뒤에서부터 출력\n");
 	for (int i = N - 1; i >= 0; i--) {
 		printf("%3d: %4d  |", i + 1, arr[i]);
-		if (i % 5 == 0 && i != 99) printf("\n");
+		if (i % 5 == N % 5) printf("\n");
 	}
 
 	for (int i = 0; i < N; i++) {

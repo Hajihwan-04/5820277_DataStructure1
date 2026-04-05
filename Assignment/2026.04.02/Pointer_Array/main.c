@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main() {
 	int N;
 	printf("정수를 입력하세요 : ");
 	scanf_s("%d", &N);
+	printf("\n");
 	int sum = 0, big = 0, small = N;
 
 	int* arr = (int*)malloc(sizeof(int) * N);
@@ -21,17 +23,17 @@ int main() {
 	printf("순서대로 출력\n");
 	for (int i = 0; i < N; i++) {
 		printf("%3d: %4d  |", i + 1, *(arr + i));
-		if ((i + 1) % 5 == 0 && i != 0) printf("\n");
+		if ((i + 1) % 5 == 0) printf("\n");
 	}
-	printf("------------------------------------------------------------\n");
+	printf("\n------------------------------------------------------------\n");
 
 
 	printf("뒤에서부터 출력\n");
 	for (int i = N - 1; i >= 0; i--) {
 		printf("%3d: %4d  |", i + 1, *(arr + i));
-		if (i % 5 == 0 && i != 99) printf("\n");
+		if (i % 5 == N % 5) printf("\n");
 	}
-	printf("------------------------------------------------------------\n");
+	printf("\n------------------------------------------------------------\n");
 
 
 	for (int i = 0; i < N; i++) {
@@ -39,7 +41,6 @@ int main() {
 		if (big < *(arr + i)) big = *(arr + i);
 		if (small > *(arr + i)) small = *(arr + i);
 	}
-	printf("------------------------------------------------------------\n");
 
 	printf("배열총합 : %ld\n최대값   : %d\n최소값   : %d\n", sum, big, small);
 
