@@ -7,8 +7,8 @@ int main() {
 	printf("정수를 입력하세요 : ");
 	scanf_s("%d", &N);
 	printf("\n");
-	int sum = 0, big = 0, small = N;
-
+	int big = 0, small = N;
+	long sum = 0;
 	int* arr = (int*)malloc(sizeof(int) * N);
 
 	if (arr == NULL) {
