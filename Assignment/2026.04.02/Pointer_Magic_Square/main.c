@@ -51,12 +51,10 @@ int main() {
 			if (i == j) { sumArrD[0] += *(*(matrix + i) + j); }
 			if (i + j == N - 1) { sumArrD[1] += *(*(matrix + i) + j); }
 		}
-
 		printf("|\n");
 		for (int dash = 0; dash < (N * 5 + 1); dash++) { printf("-"); }
 		printf("\n");
 	}
-
 	for (int x2 = 0; x2 < N; x2++) {
 		printf("가로 %2d열 합 : %d\n", x2, *(sumArrX + x2));
 	}
@@ -64,7 +62,6 @@ int main() {
 	for (int y2 = 0; y2 < N; y2++) {
 		printf("세로 %2d행 합 : %d\n", y2, *(sumArrY + y2));
 	}
-	
 	
 	printf("\n");
 	printf("0, 0에서 %d, %d방향 대각선 : %d\n", N - 1, N - 1, sumArrD[0]);
