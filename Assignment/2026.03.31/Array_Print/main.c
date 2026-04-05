@@ -22,12 +22,12 @@ int main() {
 	printf("------------------------------------------------------------\n\n");
 
 	printf("뒤에서부터 출력\n");
-	for (int i = 99; i >= 0; i--) {
+	for (int i = N - 1; i >= 0; i--) {
 		printf("%3d: %4d  |", i + 1, arr[i]);
 		if (i % 5 == 0 && i != 99) printf("\n");
 	}
 
-	for (int i = 0; i < 100; i++) {
+	for (int i = 0; i < N; i++) {
 		sum += arr[i];
 		if (big < arr[i]) big = arr[i];
 		if (small > arr[i]) small = arr[i];
