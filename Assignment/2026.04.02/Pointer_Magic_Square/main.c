@@ -70,7 +70,7 @@ int main() {
 	free(sumArrY);
 	free(sumArrX);
 
-	for (int y = 0; y < N; y++) {
+	for (int y3 = 0; y3 < N; y3++) {
 		free(*(matrix + y));
 	}
 	free(matrix);
