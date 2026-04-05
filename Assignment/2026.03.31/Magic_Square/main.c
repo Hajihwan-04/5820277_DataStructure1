@@ -3,8 +3,8 @@
 #define N 5
 
 int main() {
-	if (N % 2 == 0) {
-		printf("짝수는 불가"); return 1;
+	if (N % 2 == 0 || N < 0) {
+		printf("짝수, 음수는 불가"); return 1;
 	}
 	printf("[%d x %d 마방진]\n\n",N, N);
 	
