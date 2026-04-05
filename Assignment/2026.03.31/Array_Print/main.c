@@ -6,7 +6,7 @@
 
 int main() {
 	int arr[N], big = 0, small = N;
-	long sum = 0;
+	long long sum = 0;
 
 	//N개의 배열에 임의의 수 채움
 	srand(time(NULL));

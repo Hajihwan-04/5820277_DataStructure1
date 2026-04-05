@@ -8,7 +8,7 @@ int main() {
 	scanf_s("%d", &N);
 	printf("\n");
 	int big = 0, small = N;
-	long sum = 0;
+	long long sum = 0;
 	int* arr = (int*)malloc(sizeof(int) * N);
 
 	if (arr == NULL) {
