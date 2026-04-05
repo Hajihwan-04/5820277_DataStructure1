@@ -10,7 +10,7 @@ int main() {
 	//N개의 배열에 임의의 수 채움
 	srand(time(NULL));
 	for (int i = 0; i < N; i++) {
-		arr[i] = rand() % N;
+		arr[i] = rand() % (N + 1);
 	}
 
 	printf("순서대로 출력\n");
