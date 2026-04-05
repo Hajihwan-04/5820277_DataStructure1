@@ -15,15 +15,15 @@ int main() {
 
 	printf("순서대로 출력\n");
 	for (int i = 0; i < N; i++) {
-		printf("|%3d: %3d|", i + 1, arr[i]);
+		printf("%3d: %4d  |", i + 1, arr[i]);
 		if ((i + 1) % 5 == 0 && i != 0) printf("\n");
 	}
 
-	printf("--------------------------------------------------\n");
+	printf("------------------------------------------------------------\n\n");
 
 	printf("뒤에서부터 출력\n");
 	for (int i = 99; i >= 0; i--) {
-		printf("|%3d: %3d|", i + 1, arr[i]);
+		printf("%3d: %4d  |", i + 1, arr[i]);
 		if (i % 5 == 0 && i != 99) printf("\n");
 	}
 
@@ -33,9 +33,9 @@ int main() {
 		if (small > arr[i]) small = arr[i];
 	}
 
-	printf("--------------------------------------------------\n");
+	printf("------------------------------------------------------------\n");
 
-	printf("배열총합 : %ld\n최대값   : %d\n최소값   : %d", sum, big, small);
+	printf("배열총합 : %ld\n최대값   : %d\n최소값   : %d\n", sum, big, small);
 
 	return 0;
 }
