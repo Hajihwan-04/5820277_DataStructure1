@@ -15,14 +15,15 @@ int main() {
 	printf("학생 수 입력 : ");
 	scanf_s("%d", &N);
 
-	if (N <= 0 || N > 100) {
-		printf("!!ERROR!!\n1~100 사이의 수를 입력해주세요.");
+	if (N <= 0) {
+		printf("!!ERROR!!\n0이하의 수 불가.");
 		return 1;
 	}
 
 	struct studentInfo* studentList = (struct studentInfo*)malloc(sizeof(struct studentInfo) * N);
 	if (studentList == NULL) {
 		printf("No more memory");
+		free(studentList);
 		return 1;
 	}
 
@@ -33,7 +34,7 @@ int main() {
 		return 0;
 	}
 	char file_buff[25];
-	int high = 0, low = 101, highStu = 0, lowStu = 0;
+	int high = 0, low = 101, highStu = 0, lowStu = 0, count;
 	float avg = 0.0;
 	srand(time(NULL));
 	for (int i = 0; i < N && fgets(file_buff, sizeof(file_buff), fp) != NULL; i++) {
@@ -50,10 +51,11 @@ int main() {
 			highStu = i;
 		}
 		avg += studentList[i].score;
+		count++;
 	}
 	fclose(fp);
 
-	avg /= N;
+	avg /= count;
 
 	printf("\n최저점 학생 정보\n 이름: %s 학번: %d\n 성적: %d\n", studentList[lowStu].name, studentList[lowStu].stuNum, studentList[lowStu].score);
 	printf("\n최고점 학생 정보\n 이름: %s 학번: %d\n 성적: %d\n", studentList[highStu].name, studentList[highStu].stuNum, studentList[highStu].score);
