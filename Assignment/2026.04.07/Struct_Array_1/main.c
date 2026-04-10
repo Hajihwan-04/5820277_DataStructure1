@@ -34,7 +34,7 @@ int main() {
 		return 0;
 	}
 	char file_buff[25];
-	int high = 0, low = 101, highStu = 0, lowStu = 0, count;
+	int high = 0, low = 101, highStu = 0, lowStu = 0, count = 0;
 	float avg = 0.0;
 	srand(time(NULL));
 	for (int i = 0; i < N && fgets(file_buff, sizeof(file_buff), fp) != NULL; i++) {
@@ -56,7 +56,8 @@ int main() {
 	fclose(fp);
 
 	avg /= count;
-
+	if (count != N) printf("학생 자료 부족\n");
+	printf("학생수 : %d\n", count);
 	printf("\n최저점 학생 정보\n 이름: %s 학번: %d\n 성적: %d\n", studentList[lowStu].name, studentList[lowStu].stuNum, studentList[lowStu].score);
 	printf("\n최고점 학생 정보\n 이름: %s 학번: %d\n 성적: %d\n", studentList[highStu].name, studentList[highStu].stuNum, studentList[highStu].score);
 	printf("\n평균 점수 : %.2f\n", avg);
