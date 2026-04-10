@@ -57,7 +57,7 @@ int main() {
 
 	avg /= count;
 	if (count != N) printf("학생 자료 부족\n");
-	printf("학생수 : %d\n", count);
+	printf("학생 수 : %d\n", count);
 	printf("\n최저점 학생 정보\n 이름: %s 학번: %d\n 성적: %d\n", studentList[lowStu].name, studentList[lowStu].stuNum, studentList[lowStu].score);
 	printf("\n최고점 학생 정보\n 이름: %s 학번: %d\n 성적: %d\n", studentList[highStu].name, studentList[highStu].stuNum, studentList[highStu].score);
 	printf("\n평균 점수 : %.2f\n", avg);
