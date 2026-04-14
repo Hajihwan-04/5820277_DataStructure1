@@ -40,6 +40,7 @@
   </Folder>
   <Folder Name="/Assignment/2026.04.14/">
     <Project Path="Assignment/2026.04.14/ArrayList/ArrayList.vcxproj" Id="7df46d0d-9a6a-4f67-a768-504ef818e50d" />
+    <Project Path="Assignment/2026.04.14/ArrayListRealloc/ArrayListRealloc.vcxproj" Id="ffd2d881-0eb2-4f26-b566-f969f25cdb6b" />
   </Folder>
   <Project Path="5820277_DataStructure1/5820277_DataStructure1.vcxproj" Id="ee55d865-7c5d-4a50-8a53-ec6f853531fd" />
 </Solution>
