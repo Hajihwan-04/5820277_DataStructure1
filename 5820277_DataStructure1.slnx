@@ -5,15 +5,15 @@
   </Configurations>
   <Folder Name="/Assignment/" />
   <Folder Name="/Assignment/2026.03.10/">
-    <Project Path="Assignment/2026.03.10/2026.03.10.vcxproj" />
+    <Project Path="Assignment/2026.03.10/2026.03.10.vcxproj" Id="ad387cad-bf6e-45a5-bccf-af689d53b324" />
   </Folder>
   <Folder Name="/Assignment/2026.03.12/">
-    <Project Path="Assignment/2026.03.12/2026.03.12.vcxproj" />
+    <Project Path="Assignment/2026.03.12/2026.03.12.vcxproj" Id="755f0369-996d-425b-994a-4f11196347c2" />
   </Folder>
   <Folder Name="/Assignment/2026.03.17/">
     <Project Path="Assignment/2026.03.17/Fraction_ADT/Fraction_ADT.vcxproj" Id="fba60d91-77a3-4b79-8a38-a9248b6ceee5" />
     <Project Path="Assignment/2026.03.17/GCD_LCM/GCD_LCM.vcxproj" Id="1a20d501-2003-45db-9086-9b30db7cbea5" />
-    <Project Path="Assignment/2026.03.17/My integer/My integer.vcxproj" />
+    <Project Path="Assignment/2026.03.17/My integer/My integer.vcxproj" Id="c192b5e8-3d6c-4d3d-9d42-4302d7e9dd7d" />
     <Project Path="Assignment/2026.03.17/Rectangle_Size/Rectangle_Size.vcxproj" Id="084d9f00-8adf-4e01-9119-9836c5033c63" />
   </Folder>
   <Folder Name="/Assignment/2026.03.26/">
