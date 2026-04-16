@@ -15,9 +15,9 @@ int main() {
 
 	printArrayList(myArrayList);
 
-	//deleteArrayList(myArrayList, 0);
-	//deleteArrayList(myArrayList, 1);
-	//deleteArrayList(myArrayList, 2);
+	deleteArrayList(myArrayList, 0);
+	deleteArrayList(myArrayList, 1);
+	deleteArrayList(myArrayList, 2);
 
 	printArrayList(myArrayList);
 
