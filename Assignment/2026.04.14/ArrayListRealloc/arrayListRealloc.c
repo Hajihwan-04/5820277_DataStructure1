@@ -54,11 +54,12 @@ int insertArrayList(arrayList* al, int pos, elementArrayList item) {
 	
 	if (isFullArrayList(al)) {
 		printf(" |메모리 추가|\n");
-		elementArrayList* temp = (elementArrayList*)realloc(al->data, sizeof(elementArrayList) * (al->capacity += 1));
+		elementArrayList* temp = (elementArrayList*)realloc(al->data, sizeof(elementArrayList) * (al->capacity + 1));
 		if (temp == NULL) {
 			printf("ERROR!! 메모리 부족\n");
 			return 0;
 		}
+		al->capacity += 1;
 		al->data = temp;
 	}
 	for (int i = al->size - 1; i >= pos; i--) {
@@ -70,6 +71,7 @@ int insertArrayList(arrayList* al, int pos, elementArrayList item) {
 
 	return 1;
 }
+
 elementArrayList deleteArrayList(arrayList* al, int pos) {
 	if (pos < 0 || pos > al->size - 1) {
 		return 0;
