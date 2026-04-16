@@ -86,8 +86,9 @@ int replaceItemArrayList(arrayList* al, int pos, elementArrayList item) {
 }
 
 void printArrayList(arrayList* al) {
-	printf("순차 리스트: ");
+	printf("희소 행렬 순차 리스트: ");
+
 	for (int i = 0; i < al->size; i++) {
-		printf("%d ", al->data[i]);
+		printf("%d %d %d ", al->data[i].row, al->data[i].col, al->data[i].value);
 	}
 }
