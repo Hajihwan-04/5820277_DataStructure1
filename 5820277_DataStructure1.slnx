@@ -42,5 +42,10 @@
     <Project Path="Assignment/2026.04.14/ArrayList/ArrayList.vcxproj" Id="7df46d0d-9a6a-4f67-a768-504ef818e50d" />
     <Project Path="Assignment/2026.04.14/ArrayListRealloc/ArrayListRealloc.vcxproj" Id="ffd2d881-0eb2-4f26-b566-f969f25cdb6b" />
   </Folder>
+  <Folder Name="/Assignment/2026.04.16/">
+    <Project Path="Assignment/2026.04.16/Array_List_Imp/Array_List_Imp.vcxproj" Id="8fea3fbc-6b88-43a1-ae5f-8ace10c5932a" />
+    <Project Path="Assignment/2026.04.16/Sequential_List/Sequential_List.vcxproj" Id="6f0c7c83-f6c1-4877-821d-4e256de3be48" />
+    <Project Path="Assignment/2026.04.16/SparseMatrix/SparseMatrix.vcxproj" Id="7879f27e-5158-4e77-b3c9-8e4ee6a04bee" />
+  </Folder>
   <Project Path="5820277_DataStructure1/5820277_DataStructure1.vcxproj" Id="ee55d865-7c5d-4a50-8a53-ec6f853531fd" />
 </Solution>
