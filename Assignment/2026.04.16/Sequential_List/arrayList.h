@@ -8,7 +8,7 @@ typedef struct elementArrayListType {
 }elementArrayList;
 
 typedef struct arrayListType {
-	elementArrayList* data;
+	elementArrayList** data;
 	int size;
 	int capacity;
 } arrayList;

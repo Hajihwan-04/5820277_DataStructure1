@@ -7,7 +7,6 @@
 int dataMovement = 0;
 
 sparseMatrix* createSparseMatrix(int row, int col) {
-	if (col == 0) return createArrayList(row);
 	return createArrayList(row * col);
 }
 
@@ -76,28 +75,29 @@ sparseMatrix* addSparseMatrix(sparseMatrix* sm1, sparseMatrix* sm2) {
 	return smResult;
 } 
 sparseMatrix* transposeMatrix(sparseMatrix* sm) {
-	sparseMatrix* result = createSparseMatrix(sm->size, 0);
-	result->size = sm->size;
 	int numCols = (int)sqrt(sm->capacity);
+	sparseMatrix* result = createSparseMatrix(numCols, numCols);
+	result->size = sm->size;
 	int* rowTerms = (int*)calloc(numCols, sizeof(int));
 	int* startingPos = (int*)calloc(numCols, sizeof(int));
 
 	for (int i = 0; i < sm->size; i++) {
-		rowTerms[sm->data[i].col]++;
+		rowTerms[sm->data[i]->col]++;
 	}
 	startingPos[0] = 0;
 	for (int i = 1; i < numCols; i++) {
 		startingPos[i] = startingPos[i - 1] + rowTerms[i - 1];
 	}
 	for (int i = 0; i < sm->size; i++) {
-		int j = startingPos[sm->data[i].col];
+		int j = startingPos[sm->data[i]->col];
+		elementArrayList* realData = (elementArrayList*)malloc(sizeof(elementArrayList));
+		realData->row = sm->data[i]->col;
+		realData->col = sm->data[i]->row;
+		realData->value = sm->data[i]->value;
+		result->data[j] = realData;
+		dataMovement ++;
 
-		result->data[j].row = sm->data[i].col;
-		result->data[j].col = sm->data[i].row;
-		result->data[j].value = sm->data[i].value;
-		dataMovement += 3;
-
-		startingPos[sm->data[i].col]++;
+		startingPos[sm->data[i]->col]++;
 	}
 	
 	free(rowTerms);

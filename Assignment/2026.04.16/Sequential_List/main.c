@@ -35,7 +35,9 @@ int main() {
 				insertArrayList(sm1, size, temp);
 				size++;
 			}
+			printf("(%d %d %2d) ", i, j, smArray[i][j]);
 		}
+		printf("\n");
 	}
 
 	printSparseMatrix(sm1);
@@ -43,6 +45,19 @@ int main() {
 	sparseMatrix* tpMatrix = transposeMatrix(sm1);
 
 	printSparseMatrix(tpMatrix);
+	size = 0;
+	for (int i = 0; i < ROW; i++) {
+		for (int j = 0; j < COL; j++) {
+			if (size < tpMatrix->size && tpMatrix->data[size]->row == i && tpMatrix->data[size]->col == j) {
+				printf("(%d %d %2d) ", i, j, tpMatrix->data[size]->value);
+				size++;
+			}
+			else {
+				printf("(%d %d %2d) ", i, j, 0);
+			}
+		}
+		printf("\n");
+	}
 	
 	printf("데이터 이동 횟수: %d회\n", dataMovement);
 	destoryArrayList(sm1);

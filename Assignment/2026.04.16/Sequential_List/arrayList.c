@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 #include "arrayList.h"
 
@@ -11,7 +12,7 @@ arrayList* createArrayList(int size) {
 		printf("ERROR!! 메모리 부족\n");
 		return NULL;
 	}
-	al->data = (elementArrayList*)malloc(sizeof(elementArrayList) * size);
+	al->data = (elementArrayList**)malloc(sizeof(elementArrayList*) * size);
 	if (al->data == NULL) {
 		printf("ERROR!! 메모리 부족\n");
 		free(al);
@@ -23,6 +24,9 @@ arrayList* createArrayList(int size) {
 	return al;
 }
 void destoryArrayList(arrayList* al) {
+	for (int i = 0; i < al->size; i++) {
+		free(al->data[i]);
+	}
 	free(al->data);
 	free(al);
 }
@@ -54,7 +58,7 @@ int insertArrayList(arrayList* al, int pos, elementArrayList item) {
 	
 	if (isFullArrayList(al)) {
 		printf(" |메모리 추가|\n");
-		elementArrayList* temp = (elementArrayList*)realloc(al->data, sizeof(elementArrayList) * (al->capacity + 1));
+		elementArrayList** temp = (elementArrayList**)realloc(al->data, sizeof(elementArrayList*) * (al->capacity + 1));
 		if (temp == NULL) {
 			printf("ERROR!! 메모리 부족\n");
 			return 0;
@@ -66,7 +70,12 @@ int insertArrayList(arrayList* al, int pos, elementArrayList item) {
 		al->data[i + 1] = al->data[i];
 	}
 
-	al->data[pos] = item;
+	elementArrayList* realData = (elementArrayList*)malloc(sizeof(elementArrayList));
+	realData->row = item.row;
+	realData->col = item.col;
+	realData->value = item.value;
+
+	al->data[pos] = realData;
 	al->size++;
 	return 1;
 }
@@ -74,7 +83,8 @@ int insertArrayList(arrayList* al, int pos, elementArrayList item) {
 elementArrayList deleteArrayList(arrayList* al, int pos) {
 	if (pos < 0 || pos > al->size - 1) {
 	}
-	elementArrayList item = al->data[pos];
+	elementArrayList item = *(al->data[pos]);
+	free(al->data[pos]);
 	for (int i = pos; i < al->size - 1; i++) {
 		al->data[i] = al->data[i + 1];
 	}
@@ -89,23 +99,25 @@ void initArrayList(arrayList* al) {
 }
 
 elementArrayList getItemArrayList(arrayList* al, int pos) {
-	return al->data[pos];
+	return *(al->data[pos]);
 }
 int replaceItemArrayList(arrayList* al, int pos, elementArrayList item) {
 	if (pos < 0 || pos > al->size - 1) {
 		return 0;
 	}
 
-	al->data[pos] = item;
+	*(al->data[pos]) = item;
 
 	return 1;
 }
 
 void printArrayList(arrayList* al) {
-	printf("희소 행렬 순차 리스트: ");
+	printf("희소 행렬 순차 리스트\n");
 
 	for (int i = 0; i < al->size; i++) {
-		printf("(%d %d %d) ", al->data[i].row, al->data[i].col, al->data[i].value);
+		if (i % ((int)sqrt(al->capacity)) == 0 && i != 0) printf("\n");
+		printf("(%d %d %2d) ", al->data[i]->row, al->data[i]->col, al->data[i]->value);
+		
 	}
-	printf("\n");
+	printf("\n\n");
 }
