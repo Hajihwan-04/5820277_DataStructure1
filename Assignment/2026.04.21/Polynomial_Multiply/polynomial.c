@@ -88,7 +88,7 @@ polynomial* multiplePolynomial(polynomial* p1, polynomial* p2) {
 
 	for (int i = 0; i < p1->size; i++) {
 		for (int j = 0; j < p2->size; j++) {
-			addItemPolynomial(result, (elementType) { p1->data[i].coef * p2->data[j].coef, p1->data[i].expo + p1->data[j].expo });
+			addItemPolynomial(result, (elementType) { p1->data[i].coef * p2->data[j].coef, p1->data[i].expo + p2->data[j].expo });
 		}
 	}
 	return result;
