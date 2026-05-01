@@ -47,5 +47,12 @@
     <Project Path="Assignment/2026.04.16/Sequential_List/Sequential_List.vcxproj" Id="6f0c7c83-f6c1-4877-821d-4e256de3be48" />
     <Project Path="Assignment/2026.04.16/SparseMatrix/SparseMatrix.vcxproj" Id="7879f27e-5158-4e77-b3c9-8e4ee6a04bee" />
   </Folder>
+  <Folder Name="/Assignment/2026.04.21/">
+    <Project Path="Assignment/2026.04.21/Polynomial_Multiply/Polynomial_Multiply.vcxproj" Id="621d9f04-db41-4e9d-9938-2bc0838494a2" />
+    <Project Path="Assignment/2026.04.21/Polynomial_Proffesor/Polynomial_Proffesor.vcxproj" Id="2981db87-b6f1-4bcd-938e-53cd71c2a181" />
+  </Folder>
+  <Folder Name="/Assignment/2026.04.28/">
+    <Project Path="Assignment/2026.04.28/자체참조구조체/자체참조구조체.vcxproj" Id="77d1f4a6-a359-4049-94b5-77ac5c86b3a3" />
+  </Folder>
   <Project Path="5820277_DataStructure1/5820277_DataStructure1.vcxproj" Id="ee55d865-7c5d-4a50-8a53-ec6f853531fd" />
 </Solution>
