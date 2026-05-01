@@ -84,8 +84,6 @@ polynomial* addPolynomial(polynomial* p1, polynomial* p2) {
 }
 
 polynomial* multiplePolynomial(polynomial* p1, polynomial* p2) {
-	polynomial* po1 = (polynomial*)createPolynomial(100);
-	polynomial* po2 = (polynomial*)createPolynomial(100);
 	polynomial* result = (polynomial*)createPolynomial(100);
 
 	for (int i = 0; i < p1->size; i++) {
