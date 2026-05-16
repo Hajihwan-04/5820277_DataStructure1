@@ -63,6 +63,7 @@
   </Folder>
   <Folder Name="/Assignment/2026.05.14/">
     <Project Path="Assignment/2026.05.14/Circular_LinkedList_Professor/Circular_LinkedList_Professor.vcxproj" Id="739f043e-b92c-4c2e-9b56-2030b9501bf3" />
+    <Project Path="Assignment/2026.05.14/Double_LinkedList/Double_LinkedList.vcxproj" Id="1bdaae8a-91cb-4f8d-ba96-a46e6958f392" />
     <Project Path="Assignment/2026.05.14/Double_LinkedList_Professor/Double_LinkedList_Professor.vcxproj" Id="d16c660b-f94a-4bb2-b7c6-e11bec85e9b8" />
   </Folder>
   <Project Path="5820277_DataStructure1/5820277_DataStructure1.vcxproj" Id="ee55d865-7c5d-4a50-8a53-ec6f853531fd" />

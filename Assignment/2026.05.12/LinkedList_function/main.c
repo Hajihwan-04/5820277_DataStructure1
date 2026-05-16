@@ -53,7 +53,7 @@ int main() {
 			printLinkedList(myList1);
 			break;
 		case 6:
-			printf("리스트의 총 노드 갯수 : %d\n\n", myList1->size);
+			printf("리스트의 총 노드 갯수 : %d\n\n", sizeLinkedList(myList1));
 			break;
 		case 0:
 			destroyLinkedList(myList1);
