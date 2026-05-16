@@ -24,3 +24,8 @@ extern LinkedList* deleteAtLinkedList(LinkedList* li, int at);
 extern LinkedList* insertItemLinkedList(LinkedList* li, PointType* pre, PointType item);
 extern PointType deleteFirstLinkedList(LinkedList* li);
 extern PointType deleteLastLinkedList(LinkedList* li);
+extern PointType deleteItemLinkedList(LinkedList* li, PointType item);
+extern LinkedList* insertAtLinkedList(LinkedList* li, int at, PointType item);
+extern PointType getItemLinkedList(LinkedList* li, int pos);
+extern void replaceItemLinkedList(LinkedList* li, int pos, PointType item);
+extern PointType nextItemLinkedList(LinkedList* li, PointType* pre);

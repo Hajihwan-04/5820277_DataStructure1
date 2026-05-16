@@ -11,6 +11,18 @@ int main() {
 	insertLastLinkedList(myList1, (PointType) { 20, 30, 0 });
 	insertLastLinkedList(myList1, (PointType) { 30, 40, 0 });
 	printLinkedList(myList1);
+
+	insertItemLinkedList(myList1, myList1->head->next, (PointType) { 40, 50, 0 });
+	insertItemLinkedList(myList1, NULL, (PointType) { 50, 60, 0 });
+	printLinkedList(myList1);
+
+	//deleteFirstLinkedList(myList1);
+	//deleteFirstLinkedList(myList1);
+	//printLinkedList(myList1);
+
+	//deleteLastLinkedList(myList1);
+	//printLinkedList(myList1);
+
 	deleteAtLinkedList(myList1, 1);
 	printLinkedList(myList1);
 	deleteAtLinkedList(myList1, 1);
