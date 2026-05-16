@@ -145,7 +145,7 @@ PointType nextItemDLinkedList(DLinkedList* dl, PointType* pre) {
 
 void printDLinkedList(DLinkedList* dl) {
 	printf("Print DLinkedList:\n");
-	printf("Size: %d\n", dl->size);
+	//printf("Size: %d\n", dl->size);
 	if (dl->size == 0) {
 		return;
 	}
@@ -156,4 +156,5 @@ void printDLinkedList(DLinkedList* dl) {
 		printf("[%d] x: %d, y: %d, next: %x, prev: %x\n", i, start->x, start->y, start->next, start->prev);
 		start = start->next;
 	}
+	printf("\n");
 }

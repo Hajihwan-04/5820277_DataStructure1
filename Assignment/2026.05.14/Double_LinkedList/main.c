@@ -1,36 +1,68 @@
 #include "DLinkedList.h"
 
+PointType getItem() {
+	printf("정수 2개를 입력하세요 ex) \"10 20\" : ");
+	int a, b;
+	scanf_s("%d %d", &a, &b);
+	PointType result;
+	result.x = a;
+	result.y = b;
+	result.next = 0;
+	return result;
+}
+
 int main() {
 	DLinkedList* myList = createDLinkedList();
 
-	insertFirstDLinkedList(myList, (PointType) { 10, 20, 0 });
-	insertFirstDLinkedList(myList, (PointType) { 20, 30, 0 });
-	insertLastDLinkedList(myList, (PointType) { 30, 40, 0 });
-	insertLastDLinkedList(myList, (PointType) { 40, 50, 0 });
-	insertItemDLinkedList(myList, myList->head.next, (PointType) { 50, 60, 0 });
-	insertItemDLinkedList(myList, &(myList->head), (PointType) { 60, 70, 0 });
-	printDLinkedList(myList);
+	int end = 0;
+	while (end == 0) {
+		printf("메뉴 : \n1. 맨 앞에 추가: 정수를 입력받아 리스트의 가장 앞에 삽입\n");
+		printf("2. 맨 뒤에 추가 : 정수를 입력받아 리스트의 가장 뒤에 삽입\n");
+		printf("3. 특정 위치에 추가 : 위치(index)와 정수를 입력받아 해당 위치에 삽입\n");
+		printf("4. 특정 위치 삭제 : 위치(index)를 입력받아 해당 노드를 삭제하고 값 출력\n");
+		printf("5. 전체 목록 출력 : 현재 리스트에 저장된 모든 정수를 순서대로 출력\n");
+		printf("6. 리스트 크기 확인 : 현재 저장된 노드의 총 개수를 출력\n");
+		printf("0. 종료 : 모든 메모리를 해제(destroy)하고 프로그램을 종료\n입력 : ");
+		int input;
+		scanf_s("%d", &input);
+		PointType newItem;
+		switch (input) {
+		case 1:
+			newItem = getItem();
+			insertFirstDLinkedList(myList, newItem);
+			break;
+		case 2:
+			newItem = getItem();
+			insertLastDLinkedList(myList, newItem);
+			break;
+		case 3:
+			printf("원하는 리스트의 위치를 입력하세요 : ");
+			int pos1;
+			scanf_s("%d", &pos1);
+			newItem = getItem();
+			insertAtDLinkedList(myList, pos1, newItem);
+			break;
+		case 4:
+			printf("원하는 리스트의 위치를 입력하세요 : ");
+			int pos2;
+			scanf_s("%d", &pos2);
+			deleteAtDLinkedList(myList, pos2);
+			break;
+		case 5:
+			printDLinkedList(myList);
+			break;
+		case 6:
+			printf("리스트의 총 노드 갯수 : %d\n\n", sizeLinkedList(myList));
+			break;
+		case 0:
+			destroyDLinkedList(myList);
+			end = 1;
+			printf("종료되었습니다.\n");
+			break;
+		default:
+			printf("잘못 입력하였습니다.\n\n");
+		}
+	}
 
-	deleteFirstDLinkedList(myList);
-	printDLinkedList(myList);
-
-	deleteLastDLinkedList(myList);
-	printDLinkedList(myList);
-
-	deleteItemDLinkedList(myList, (PointType) { 50, 60, 0 });
-	printDLinkedList(myList);
-
-	insertAtDLinkedList(myList, 2, (PointType) { 50, 60, 0 });
-	printDLinkedList(myList);
-
-	deleteAtDLinkedList(myList, 1);
-	printDLinkedList(myList);
-
-	PointType test = getItemDLinkedList(myList, 1);
-	printf("%d, %d\n", test.x, test.y);
-
-	replaceItemDLinkedList(myList, 1, (PointType) { 70, 80, 0 });
-	printDLinkedList(myList);
-
-	destroyDLinkedList(myList);
+	return 0;
 }
