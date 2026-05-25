@@ -68,7 +68,12 @@
   </Folder>
   <Folder Name="/Assignment/2026.05.19/">
     <Project Path="Assignment/2026.05.19/ArrayStack_Professor/ArrayStack_Professor.vcxproj" Id="02b2970e-64f7-4616-b745-cb62c91169d5" />
+    <Project Path="Assignment/2026.05.19/LinkedStack/LinkedStack.vcxproj" Id="e9e77445-65ba-493e-910a-6d25d046a796" />
     <Project Path="Assignment/2026.05.19/LinkedStack_Professor/LinkedStack_Professor.vcxproj" Id="db69f06b-0d4a-4854-9336-eb7553458f19" />
+  </Folder>
+  <Folder Name="/Assignment/2026.05.21/">
+    <Project Path="Assignment/2026.05.21/Calculator/Calculator.vcxproj" Id="7d653071-c569-4510-bdf1-c13c4e9486ab" />
+    <Project Path="Assignment/2026.05.21/Calculator_Professor/Calculator_Professor.vcxproj" Id="50236de9-75eb-48de-8b78-b1581db945f1" />
   </Folder>
   <Project Path="5820277_DataStructure1/5820277_DataStructure1.vcxproj" Id="ee55d865-7c5d-4a50-8a53-ec6f853531fd" />
 </Solution>
