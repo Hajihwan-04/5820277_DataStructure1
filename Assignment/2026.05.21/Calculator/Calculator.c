@@ -3,16 +3,16 @@
 
 int inFixToPostfix(char* infix, char* postfix) {
 	int j = 0;
-	char op[100], value[100];
-	int opCount = 0, valueCount = 0;
+	char op[100];
+	int opCount = 0;
 	ArrayStack* opStack = createArrayStack(100, CHARACTER);
 
 	printf("Transform:\n");
 	for (int i = 0; infix[i] != NULL; i++) {
+		if (infix[i] == ' ') continue;
 		if (infix[i] >= '0' && infix[i] <= '9') {
 			postfix[j] = infix[i];
 			j++;
-			value[valueCount++] = infix[i];
 		}
 		stackElement item;
 		item.operator = infix[i];
@@ -79,7 +79,16 @@ int inFixToPostfix(char* infix, char* postfix) {
 		postfix[j] = item.operator;
 		j++;
 	}
-
+	printf("- Result: ");
+	for (int k3 = 0; ; k3++) {
+		if ((postfix[k3] >= '0' && postfix[k3] <= '9') || (postfix[k3] == '+' || postfix[k3] == '-' || postfix[k3] == '*' || postfix[k3] == '/')) {
+			printf("%c ", postfix[k3]);
+		}
+		else {
+			break;
+		}
+	}
+	printf("\n\n");
 	postfix[j] = NULL;
 }
 
